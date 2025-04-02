@@ -1,0 +1,249 @@
+[
+  {
+    "question": "What will be the output of the following JavaScript code?\nlet x = 5;\nlet y = '5';\nconsole.log(x == y);\nconsole.log(x === y);",
+    "options": ["true, true", "true, false", "false, true", "false, false", "Error"],
+    "answer": "true, false",
+    "explanation": "In JavaScript, the == operator performs type coercion, so 5 == '5' is true. The === operator checks both value and type, so 5 === '5' is false because one is a number and the other is a string."
+  },
+  {
+    "question": "What will be the output of the following Python code?\ndef modify_list(lst):\n    lst.append(4)\n    lst = [1, 2, 3]\n    return lst\n\nmy_list = [1, 2]\nresult = modify_list(my_list)\nprint(my_list)\nprint(result)",
+    "options": ["[1, 2], [1, 2, 3]", "[1, 2, 4], [1, 2, 3]", "[1, 2, 3], [1, 2, 3]", "[1, 2, 4], [1, 2, 4]", "Error"],
+    "answer": "[1, 2, 4], [1, 2, 3]",
+    "explanation": "In Python, when you pass a list to a function, you're passing a reference to the list. The function can modify the original list (which happens with lst.append(4)). However, when you reassign lst = [1, 2, 3], you're creating a new local list that doesn't affect the original. So my_list becomes [1, 2, 4] and result is [1, 2, 3]."
+  },
+  {
+    "question": "What will be the output of the following C code?\n#include <stdio.h>\n\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    int *ptr = arr;\n    \n    printf(\"%d, %d\\n\", *ptr, *(ptr+2));\n    return 0;\n}",
+    "options": ["1, 2", "1, 3", "2, 4", "0, 2", "Error"],
+    "answer": "1, 3",
+    "explanation": "In C, when you create a pointer to an array, it points to the first element. *ptr gives the value at that address (1). *(ptr+2) moves the pointer 2 positions forward and gives the value at that address (3)."
+  },
+  {
+    "question": "What will be the output of the following Java code?\n\`\`\`java\npublic class Main {\n    public static void main(String[] args) {\n        String s1 = \"Hello\";\n        String s2 = \"Hello\";\n        String s3 = new String(\"Hello\");\n        \n        System.out.println(s1 == s2);\n        System.out.println(s1 == s3);\n        System.out.println(s1.equals(s3));\n    }\n}\n\`\`\`",
+    "options": [
+      "true, true, true",
+      "true, false, true",
+      "false, false, true",
+      "true, true, false",
+      "false, false, false"
+    ],
+    "answer": "true, false, true",
+    "explanation": "In Java, string literals (s1 and s2) are stored in the string pool, so they reference the same object (true). s3 is created with 'new' so it's a different object in memory (false). The equals() method compares content, not references, so s1.equals(s3) is true."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nfunction createCounter() {\n    let count = 0;\n    return function() {\n        return ++count;\n    };\n}\n\nconst counter1 = createCounter();\nconst counter2 = createCounter();\n\nconsole.log(counter1());\nconsole.log(counter1());\nconsole.log(counter2());\n\`\`\`",
+    "options": ["1, 2, 1", "1, 1, 1", "1, 2, 3", "0, 1, 0", "Error"],
+    "answer": "1, 2, 1",
+    "explanation": "This is an example of a closure in JavaScript. Each call to createCounter() creates a new lexical environment with its own count variable. counter1 and counter2 are separate closures with their own count variables. So counter1() returns 1 then 2, while counter2() starts fresh at 1."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\nclass A:\n    def __init__(self):\n        self.x = 1\n    \n    def method(self):\n        return self.x\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.x = 2\n    \n    def method(self):\n        return super().method() + 1\n\nobj = B()\nprint(obj.method())\n\`\`\`",
+    "options": ["1", "2", "3", "4", "Error"],
+    "answer": "3",
+    "explanation": "Class B inherits from A and overrides both __init__ and method. In B's __init__, it calls A's __init__ which sets self.x to 1, but then B's __init__ sets self.x to 2. When obj.method() is called, it calls B's method which returns super().method() + 1. super().method() calls A's method which returns self.x (which is 2), and then adds 1, resulting in 3."
+  },
+  {
+    "question": "What will be the output of the following C++ code?\n\`\`\`cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    int y = 20;\n    int& ref = x;\n    \n    ref = y;\n    \n    cout << x << \" \" << y << endl;\n    return 0;\n}\n\`\`\`",
+    "options": ["10 20", "20 20", "20 10", "10 10", "Error"],
+    "answer": "20 20",
+    "explanation": "In C++, ref is a reference to x, not a copy. When we assign y to ref, we're actually assigning y's value to x. So x becomes 20, and y remains 20."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nconsole.log(typeof null);\nconsole.log(typeof undefined);\nconsole.log(typeof NaN);\nconsole.log(typeof []);\n\`\`\`",
+    "options": [
+      "null, undefined, number, array",
+      "object, undefined, number, object",
+      "object, undefined, number, array",
+      "null, undefined, number, object",
+      "object, string, number, object"
+    ],
+    "answer": "object, undefined, number, object",
+    "explanation": "In JavaScript, typeof null returns 'object' (this is considered a bug in the language). typeof undefined returns 'undefined'. typeof NaN returns 'number' (even though it stands for 'Not a Number'). typeof [] returns 'object' (arrays are objects in JavaScript)."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\nlist1 = [1, 2, 3]\nlist2 = list1\nlist3 = list1.copy()\n\nlist1.append(4)\n\nprint(list1)\nprint(list2)\nprint(list3)\n\`\`\`",
+    "options": [
+      "[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]",
+      "[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]",
+      "[1, 2, 3, 4], [1, 2, 3], [1, 2, 3]",
+      "[1, 2, 3], [1, 2, 3], [1, 2, 3]",
+      "Error"
+    ],
+    "answer": "[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3]",
+    "explanation": "In Python, when you assign a list to another variable (list2 = list1), both variables reference the same list object. When you modify list1, list2 also reflects the change. However, list3 = list1.copy() creates a new list with the same elements, so changes to list1 don't affect list3."
+  },
+  {
+    "question": "What will be the output of the following Java code?\n\`\`\`java\npublic class Main {\n    public static void main(String[] args) {\n        int[] arr = {1, 2, 3, 4, 5, 6};\n        int sum = 0;\n        \n        for (int i = 0; i < arr.length; i++) {\n            if (arr[i] % 2 == 0) {\n                continue;\n            }\n            sum += arr[i];\n        }\n        \n        System.out.println(sum);\n    }\n}\n\`\`\`",
+    "options": ["9", "15", "6", "0", "Error"],
+    "answer": "9",
+    "explanation": "This Java code calculates the sum of odd numbers in the array. The continue statement skips the rest of the loop body when arr[i] is even. So only the odd numbers (1, 3, 5) are added to sum, resulting in 1 + 3 + 5 = 9."
+  },
+  {
+    "question": "What will be the output of the following C code?\n\`\`\`c\n#include <stdio.h>\n\nint main() {\n    int i = 5;\n    printf(\"%d %d %d\\n\", i++, i++, i++);\n    return 0;\n}\n\`\`\`",
+    "options": ["5 6 7", "7 6 5", "5 5 5", "7 7 7", "The behavior is undefined"],
+    "answer": "The behavior is undefined",
+    "explanation": "In C, the order of evaluation of function arguments is unspecified. When you use i++ multiple times in the same statement, the behavior is undefined. Different compilers may produce different results."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst result = numbers\n    .map(x => x * 2)\n    .filter(x => x > 5)\n    .reduce((acc, x) => acc + x, 0);\n\nconsole.log(result);\n\`\`\`",
+    "options": ["30", "15", "9", "18", "24"],
+    "answer": "24",
+    "explanation": "This code uses three array methods in sequence. First, map multiplies each element by 2, resulting in [2, 4, 6, 8, 10]. Then filter keeps only elements greater than 5, resulting in [6, 8, 10]. Finally, reduce sums these elements, resulting in 6 + 8 + 10 = 24."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\ndef outer():\n    x = 1\n    def inner():\n        nonlocal x\n        x = 2\n        print(f\"inner: {x}\")\n    \n    inner()\n    print(f\"outer: {x}\")\n\nouter()\n\`\`\`",
+    "options": ["inner: 1, outer: 1", "inner: 2, outer: 1", "inner: 2, outer: 2", "inner: 1, outer: 2", "Error"],
+    "answer": "inner: 2, outer: 2",
+    "explanation": "The nonlocal keyword in Python allows a nested function to modify a variable in its enclosing (but non-global) scope. When inner() is called, it changes the value of x in the outer function's scope from 1 to 2. So both print statements show x as 2."
+  },
+  {
+    "question": "What will be the output of the following C++ code?\n\`\`\`cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 10, b = 20;\n    \n    auto lambda = [&a, b]() {\n        a = 30;\n        // b = 40; // This would cause an error\n    };\n    \n    lambda();\n    \n    cout << a << \" \" << b << \", \";\n    cout << a << \" \" << b << endl;\n    \n    return 0;\n}\n\`\`\`",
+    "options": ["30 20, 10 20", "30 20, 30 20", "10 20, 10 20", "30 40, 30 40", "Error"],
+    "answer": "30 20, 30 20",
+    "explanation": "This C++ code uses a lambda function with a capture list [&a, b]. &a means a is captured by reference, so changes to a inside the lambda affect the original variable. b is captured by value, so it can't be modified inside the lambda. The lambda changes a to 30, so both print statements show a as 30 and b as 20."
+  },
+  {
+    "question": "What will be the output of the following Java code?\n\`\`\`java\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            System.out.print(\"A\");\n            throw new Exception();\n        } catch (Exception e) {\n            System.out.print(\"B\");\n            return;\n        } finally {\n            System.out.print(\"C\");\n        }\n        System.out.print(\"D\");\n    }\n}\n\`\`\`",
+    "options": ["A", "AB", "ABC", "ABCD", "Error"],
+    "answer": "ABC",
+    "explanation": "In Java, the finally block always executes, even if there's a return statement in the try or catch block. The code prints 'A', then throws an exception, then prints 'B' in the catch block. Even though there's a return statement, the finally block executes and prints 'C'. The code after finally doesn't execute because of the return statement."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nconsole.log(0.1 + 0.2 === 0.3);\nconsole.log(0.1 + 0.2);\n\`\`\`",
+    "options": ["true, 0.3", "false, 0.3", "true, 0.30000000000000004", "false, 0.30000000000000004", "Error"],
+    "answer": "false, 0.30000000000000004",
+    "explanation": "In JavaScript (and many other languages), floating-point arithmetic is not always precise due to how numbers are represented in binary. 0.1 + 0.2 actually equals 0.30000000000000004, not exactly 0.3, so the equality check returns false."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\nclass A:\n    x = 1\n\nclass B(A):\n    pass\n\nclass C(A):\n    x = 2\n\nprint(A.x, end=', ')\nB.x = 3\nprint(A.x, B.x, C.x)\n\`\`\`",
+    "options": ["1, 1 3 2", "1, 1 1 2", "1, 3 3 2", "Error", "None of the above"],
+    "answer": "1, 1 3 2",
+    "explanation": "In Python, class variables are inherited. Initially, B.x refers to A.x, which is 1. When we set B.x = 3, we're creating a new class variable in B, not modifying A.x. So A.x remains 1, B.x becomes 3, and C.x is 2 as defined in class C."
+  },
+  {
+    "question": "What will be the output of the following C code?\n\`\`\`c\n#include <stdio.h>\n\nint main() {\n    char *s = \"Hello\";\n    s[0] = 'h';\n    printf(\"%s\\n\", s);\n    return 0;\n}\n\`\`\`",
+    "options": ["Hello", "hello", "Hello", "Segmentation fault", "Compilation error"],
+    "answer": "Segmentation fault",
+    "explanation": "In C, string literals like \"Hello\" are stored in read-only memory. Attempting to modify them (s[0] = 'h') results in undefined behavior, typically a segmentation fault at runtime. To modify strings, you should use a character array instead: char s[] = \"Hello\";"
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nlet obj = { a: 1 };\nlet arr = [obj];\n\nobj = { a: 2 };\narr.push(obj);\n\nconsole.log(arr[0].a);\nconsole.log(arr[1].a);\n\`\`\`",
+    "options": ["1, 1", "1, 2", "2, 2", "2, 1", "Error"],
+    "answer": "1, 2",
+    "explanation": "In JavaScript, objects are passed by reference. When we create arr = [obj], arr[0] references the object { a: 1 }. When we reassign obj = { a: 2 }, we're creating a new object and changing what obj references, but arr[0] still references the original object. Then we push the new object onto the array, so arr[1] references { a: 2 }."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\nlist1 = [1, 2, 3]\nlist2 = [4, 5, 6]\n\nprint([*list1, *list2])\nprint({*list1, *list2})\nprint({**{'1': 1, '2': 2, '3': 3}, **{'4': 4, '5': 5, '6': 6}})\n\`\`\`",
+    "options": [
+      "[1, 2, 3, 4, 5, 6], {1, 2, 3, 4, 5, 6}, {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6}",
+      "[1, 2, 3, 4, 5, 6], {1, 2, 3, 4, 5, 6}, {'1': 1, '2': 2, '3': 3}",
+      "Error",
+      "[1, 2, 3, 4, 5, 6], {1, 2, 3}, {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6}",
+      "None of the above"
+    ],
+    "answer": "[1, 2, 3, 4, 5, 6], {1, 2, 3, 4, 5, 6}, {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6}",
+    "explanation": "This Python code demonstrates unpacking with *. [*list1, *list2] unpacks both lists into a new list. {*list1, *list2} creates a set with all unique elements from both lists. The last line creates two dictionaries with string keys and then unpacks them into a single dictionary using **."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nconsole.log(myVar);\nvar myVar = 10;\n\`\`\`",
+    "options": ["10", "undefined", "ReferenceError", "null", "Error"],
+    "answer": "undefined",
+    "explanation": "In JavaScript, variable declarations are hoisted to the top of their scope. However, only the declaration is hoisted, not the initialization. So, when console.log(myVar) is executed, myVar exists but has not yet been assigned a value, resulting in 'undefined'."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint(factorial(5))\n\`\`\`",
+    "options": ["5", "25", "120", "625", "Error"],
+    "answer": "120",
+    "explanation": "This Python code calculates the factorial of 5 using recursion. The factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120."
+  },
+  {
+    "question": "What will be the output of the following C++ code?\n\`\`\`cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    int *ptr = &x;\n    *ptr = 10;\n    \n    cout << x << endl;\n    return 0;\n}\n\`\`\`",
+    "options": ["5", "10", "0", "Garbage value", "Error"],
+    "answer": "10",
+    "explanation": "In C++, ptr is a pointer to the memory location of x. When *ptr = 10 is executed, the value at the memory location pointed to by ptr (which is x) is changed to 10. Therefore, cout << x << endl; will output 10."
+  },
+  {
+    "question": "What will be the output of the following Java code?\n\`\`\`java\npublic class Main {\n    public static void main(String[] args) {\n        int a = 10;\n        int b = 3;\n        \n        System.out.println((double) a / b);\n    }\n}\n\`\`\`",
+    "options": ["3", "3.0", "3.3333333333333335", "3.3", "Error"],
+    "answer": "3.3333333333333335",
+    "explanation": "In Java, if you divide two integers, the result is also an integer (the decimal part is truncated). To get a floating-point result, you need to cast at least one of the operands to a double. (double) a / b performs floating-point division, resulting in 3.3333333333333335."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nconst str = \"Hello World!\";\nconsole.log(str.substring(6, 11));\n\`\`\`",
+    "options": ["Hello", "World", " Worl", "World!", "Error"],
+    "answer": "World",
+    "explanation": "The substring() method in JavaScript extracts a part of a string between the start and end indexes (exclusive of the end index). str.substring(6, 11) extracts the characters from index 6 up to (but not including) index 11, which is 'World'."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\nmy_dict = {'a': 1, 'b': 2, 'c': 3}\nprint(my_dict.get('d', 4))\n\`\`\`",
+    "options": ["1", "2", "3", "4", "None"],
+    "answer": "4",
+    "explanation": "The get() method in Python dictionaries returns the value for the specified key if the key is in the dictionary. If the key is not found, it returns the default value provided as the second argument. In this case, 'd' is not a key in my_dict, so get('d', 4) returns 4."
+  },
+  {
+    "question": "What will be the output of the following C++ code?\n\`\`\`cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int arr[] = {1, 2, 3, 4, 5};\n    int size = sizeof(arr) / sizeof(arr[0]);\n    \n    cout << size << endl;\n    return 0;\n}\n\`\`\`",
+    "options": ["1", "4", "5", "20", "Error"],
+    "answer": "5",
+    "explanation": "In C++, sizeof(arr) returns the total size of the array in bytes, and sizeof(arr[0]) returns the size of one element in the array (an integer) in bytes. Dividing the total size by the size of one element gives the number of elements in the array, which is 5."
+  },
+  {
+    "question": "What will be the output of the following Java code?\n\`\`\`java\npublic class Main {\n    public static void main(String[] args) {\n        String str1 = \"Java\";\n        String str2 = \"Java\";\n        \n        System.out.println(str1.equals(str2));\n    }\n}\n\`\`\`",
+    "options": ["true", "false", "0", "1", "Error"],
+    "answer": "true",
+    "explanation": "In Java, the equals() method compares the content of the strings. Since str1 and str2 have the same content (\"Java\"), str1.equals(str2) returns true."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nlet num = 10;\nconsole.log(num++);\nconsole.log(num);\n\`\`\`",
+    "options": ["10, 10", "10, 11", "11, 10", "11, 11", "Error"],
+    "answer": "10, 11",
+    "explanation": "In JavaScript, the post-increment operator (num++) returns the current value of num before incrementing it. So, console.log(num++) prints 10, and then num is incremented to 11. The next console.log(num) prints the updated value, which is 11."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\ndef my_function(a, b=2, c=3):\n    return a + b + c\n\nprint(my_function(1))\n\`\`\`",
+    "options": ["3", "4", "5", "6", "Error"],
+    "answer": "6",
+    "explanation": "In Python, you can define default values for function parameters. If a value is not provided for a parameter with a default value, the default value is used. In this case, my_function(1) is called with a=1, b=2 (default), and c=3 (default). So, the function returns 1 + 2 + 3 = 6."
+  },
+  {
+    "question": "What will be the output of the following C++ code?\n\`\`\`cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    int y = 5;\n    \n    cout << (x > y ? x : y) << endl;\n    return 0;\n}\n\`\`\`",
+    "options": ["5", "10", "true", "false", "Error"],
+    "answer": "10",
+    "explanation": "In C++, the ternary operator (condition ? value_if_true : value_if_false) evaluates a condition and returns one of two values based on whether the condition is true or false. In this case, x > y is true (10 > 5), so the operator returns x, which is 10."
+  },
+  {
+    "question": "What will be the output of the following Java code?\n\`\`\`java\npublic class Main {\n    public static void main(String[] args) {\n        int x = 5;\n        x += 3;\n        \n        System.out.println(x);\n    }\n}\n\`\`\`",
+    "options": ["5", "3", "8", "0", "Error"],
+    "answer": "8",
+    "explanation": "In Java, the += operator is a shorthand for x = x + 3. So, x += 3 adds 3 to the current value of x (which is 5), resulting in 8. The System.out.println() statement then prints the updated value of x, which is 8."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nconsole.log(1 + '1');\nconsole.log(1 - '1');\n\`\`\`",
+    "options": ["2, 0", "11, 0", "2, NaN", "11, NaN", "Error"],
+    "answer": "11, 0",
+    "explanation": "In JavaScript, the + operator performs string concatenation if one of the operands is a string. So, 1 + '1' concatenates the number 1 with the string '1', resulting in the string '11'. The - operator, however, attempts to convert the string '1' to a number before performing subtraction. So, 1 - '1' results in 1 - 1 = 0."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\nnumbers = [1, 2, 3, 4, 5]\nresult = list(map(lambda x: x * x, numbers))\nprint(result)\n\`\`\`",
+    "options": ["[1, 2, 3, 4, 5]", "[1, 4, 9, 16, 25]", "[1, 8, 27, 64, 125]", "Error", "None of the above"],
+    "answer": "[1, 4, 9, 16, 25]",
+    "explanation": "The map() function in Python applies a given function to each item of an iterable (like a list) and returns a new iterable with the results. In this case, the lambda function lambda x: x * x squares each number in the numbers list. So, the output is [1, 4, 9, 16, 25]."
+  },
+  {
+    "question": "What will be the output of the following C++ code?\n\`\`\`cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    int y = ++x;\n    \n    cout << x << \" \" << y << endl;\n    return 0;\n}\n\`\`\`",
+    "options": ["5 5", "5 6", "6 5", "6 6", "Error"],
+    "answer": "6 6",
+    "explanation": "In C++, the pre-increment operator (++x) increments the value of x before it is used in the expression. So, ++x increments x to 6, and then y is assigned the value of x, which is 6. Therefore, the output is 6 6."
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\`\`\`javascript\nfunction outerFunction() {\n    const outerVar = 'Hello';\n    \n    function innerFunction() {\n        console.log(outerVar);\n    }\n    \n    return innerFunction;\n}\n\nconst myFunc = outerFunction();\nmyFunc();\n\`\`\`",
+    "options": ["Hello", "undefined", "ReferenceError", "null", "Error"],
+    "answer": "Hello",
+    "explanation": "This is an example of a closure in JavaScript. The innerFunction has access to the outerVar variable from the outerFunction's scope, even after the outerFunction has finished executing. When myFunc() is called, it executes the innerFunction, which logs the value of outerVar, which is 'Hello'."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\nclass MyClass:\n    class_var = 0\n    \n    def __init__(self):\n        MyClass.class_var += 1\n\nobj1 = MyClass()\nobj2 = MyClass()\n\nprint(MyClass.class_var)\n\`\`\`",
+    "options": ["0", "1", "2", "3", "Error"],
+    "answer": "2",
+    "explanation": "class_var is a class variable, meaning it is shared by all instances of the class. Each time a new instance of MyClass is created, the __init__ method is called, which increments the class_var by 1. Since two instances are created (obj1 and obj2), class_var is incremented twice, resulting in a value of 2."
+  }
+]
+

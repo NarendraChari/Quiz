@@ -1,0 +1,579 @@
+[
+  {
+    "question": "What will be the output of the following Python code?\nprint(\"Hello, World!\")",
+    "options": ["\"Hello, World!\"", "Hello, World!", "print(\"Hello, World!\")", "Error", "None of the above"],
+    "answer": "Hello, World!",
+    "explanation": "The print() function displays the string \"Hello, World!\" on the console."
+  },
+  {
+    "question": "Which of the following is the correct way to concatenate two strings in Python?",
+    "options": ["str1.concat(str2)", "str1 + str2", "str1.append(str2)", "str1.join(str2)", "str1.add(str2)"],
+    "answer": "str1 + str2",
+    "explanation": "The + operator is used to concatenate strings in Python."
+  },
+  {
+    "question": "What will be the output of the following Python code?\ndef max_of_three(a, b, c):\n    return max(a, b, c)\n\nprint(max_of_three(1, 2, 3))",
+    "options": ["1", "2", "3", "Error", "None of the above"],
+    "answer": "3",
+    "explanation": "The max() function returns the largest of the given numbers."
+  },
+  {
+    "question": "How do you convert a string to an integer in Python?",
+    "options": [
+      "`string.toInteger()`",
+      "`int(string)`",
+      "`string.parseInt()`",
+      "`to_int(string)`",
+      "`integer(string)`"
+    ],
+    "answer": "`int(string)`",
+    "explanation": "The `int()` function is used to convert a string to an integer."
+  },
+  {
+    "question": "What will be the output of the following Python code?\n\`\`\`python\ndef is_palindrome(s):\n    return s == s[::-1]\n\nprint(is_palindrome(\"radar\"))\n\`\`\`",
+    "options": ["`\"radar\"`", "`False`", "`True`", "`Error`", "`None of the above`"],
+    "answer": "`True`",
+    "explanation": "The function checks if the string is equal to its reverse, which is the definition of a palindrome."
+  },
+  {
+    "question": "What is the purpose of the `__init__` method in Python classes?",
+    "options": [
+      "To initialize the object's attributes",
+      "To create a new instance of the class",
+      "To destroy an instance of the class",
+      "To define the class's methods",
+      "To define the class's attributes"
+    ],
+    "answer": "To initialize the object's attributes",
+    "explanation": "The `__init__` method is a special method that is automatically called when a new instance of a class is created, and it is used to initialize the object's attributes."
+  },
+  {
+    "question": "What is a list comprehension in Python?",
+    "options": [
+      "A concise way to create lists based on existing lists",
+      "A way to sort lists",
+      "A way to merge multiple lists",
+      "A way to filter lists",
+      "A way to reverse lists"
+    ],
+    "answer": "A concise way to create lists based on existing lists",
+    "explanation": "List comprehension is a concise way to create lists based on existing lists or other iterables, combining a for loop and an optional if clause in a single line."
+  },
+  {
+    "question": "What is the difference between a tuple and a list in Python?",
+    "options": [
+      "Tuples are immutable, while lists are mutable",
+      "Tuples can contain only one data type, while lists can contain multiple data types",
+      "Tuples are ordered, while lists are unordered",
+      "Tuples are faster than lists",
+      "Tuples use parentheses, while lists use square brackets"
+    ],
+    "answer": "Tuples are immutable, while lists are mutable",
+    "explanation": "The main difference between tuples and lists is that tuples are immutable (cannot be changed after creation), while lists are mutable (can be modified after creation)."
+  },
+  {
+    "question": "What is the purpose of the `*args` parameter in a Python function?",
+    "options": [
+      "To accept a variable number of positional arguments",
+      "To accept a variable number of keyword arguments",
+      "To accept a variable number of both positional and keyword arguments",
+      "To accept a variable number of arguments as a tuple",
+      "To accept a variable number of arguments as a list"
+    ],
+    "answer": "To accept a variable number of positional arguments",
+    "explanation": "The `*args` parameter allows a function to accept a variable number of positional arguments, which are collected into a tuple."
+  },
+  {
+    "question": "What is the purpose of the `**kwargs` parameter in a Python function?",
+    "options": [
+      "To accept a variable number of keyword arguments",
+      "To accept a variable number of positional arguments",
+      "To accept a variable number of both positional and keyword arguments",
+      "To accept a variable number of arguments as a dictionary",
+      "To accept a variable number of arguments as a list"
+    ],
+    "answer": "To accept a variable number of keyword arguments",
+    "explanation": "The `**kwargs` parameter allows a function to accept a variable number of keyword arguments, which are collected into a dictionary."
+  },
+  {
+    "question": "What is a decorator in Python?",
+    "options": [
+      "A function that takes another function and extends its behavior without modifying it",
+      "A function that modifies another function",
+      "A function that replaces another function",
+      "A function that calls another function",
+      "A function that returns another function"
+    ],
+    "answer": "A function that takes another function and extends its behavior without modifying it",
+    "explanation": "A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure."
+  },
+  {
+    "question": "What is the purpose of the `with` statement in Python?",
+    "options": [
+      "To ensure proper acquisition and release of resources",
+      "To handle exceptions",
+      "To define a new scope",
+      "To create a new context",
+      "To create a new namespace"
+    ],
+    "answer": "To ensure proper acquisition and release of resources",
+    "explanation": "The `with` statement is used to ensure proper acquisition and release of resources, such as files or locks, by encapsulating common preparation and cleanup tasks in a context manager."
+  },
+  {
+    "question": "What is the purpose of the `yield` keyword in Python?",
+    "options": [
+      "To return a value from a generator function and pause its execution",
+      "To return a value from a regular function",
+      "To return multiple values from a function",
+      "To return a value from a function and terminate its execution",
+      "To return a value from a function and continue its execution"
+    ],
+    "answer": "To return a value from a generator function and pause its execution",
+    "explanation": "The `yield` keyword is used in generator functions to return a value and pause the function's execution, allowing it to resume from where it left off when called again."
+  },
+  {
+    "question": "What is the purpose of the `lambda` keyword in Python?",
+    "options": [
+      "To create anonymous functions",
+      "To create named functions",
+      "To create recursive functions",
+      "To create higher-order functions",
+      "To create generator functions"
+    ],
+    "answer": "To create anonymous functions",
+    "explanation": "The `lambda` keyword is used to create small, anonymous functions (functions without a name) that can have any number of arguments but only one expression."
+  },
+  {
+    "question": "What is the purpose of the `map()` function in Python?",
+    "options": [
+      "To apply a function to each item in an iterable and return an iterator of the results",
+      "To filter items from an iterable based on a function",
+      "To apply a function to each item in an iterable and return a list of the results",
+      "To apply a function to each item in an iterable and return a tuple of the results",
+      "To apply a function to each item in an iterable and return a set of the results"
+    ],
+    "answer": "To apply a function to each item in an iterable and return an iterator of the results",
+    "explanation": "The `map()` function applies a given function to each item in an iterable (such as a list) and returns an iterator of the results."
+  },
+  {
+    "question": "What is the purpose of the `filter()` function in Python?",
+    "options": [
+      "To filter items from an iterable based on a function",
+      "To apply a function to each item in an iterable and return an iterator of the results",
+      "To filter items from an iterable based on a condition",
+      "To filter items from an iterable based on their type",
+      "To filter items from an iterable based on their value"
+    ],
+    "answer": "To filter items from an iterable based on a function",
+    "explanation": "The `filter()` function constructs an iterator from elements of an iterable for which a function returns true."
+  },
+  {
+    "question": "What is the purpose of the `reduce()` function in Python?",
+    "options": [
+      "To apply a function of two arguments cumulatively to the items of an iterable",
+      "To apply a function to each item in an iterable and return an iterator of the results",
+      "To filter items from an iterable based on a function",
+      "To reduce the size of an iterable",
+      "To reduce the number of elements in an iterable"
+    ],
+    "answer": "To apply a function of two arguments cumulatively to the items of an iterable",
+    "explanation": "The `reduce()` function (from the `functools` module) applies a function of two arguments cumulatively to the items of an iterable, from left to right, so as to reduce the iterable to a single value."
+  },
+  {
+    "question": "What is a generator in Python?",
+    "options": [
+      "A function that returns an iterator",
+      "A function that generates random numbers",
+      "A function that creates new objects",
+      "A function that generates new functions",
+      "A function that generates new classes"
+    ],
+    "answer": "A function that returns an iterator",
+    "explanation": "A generator is a special type of function that returns an iterator, which can be iterated through only once. It uses the `yield` keyword to return values one at a time, pausing execution between yields."
+  },
+  {
+    "question": "What is the purpose of the `zip()` function in Python?",
+    "options": [
+      "To aggregate elements from multiple iterables",
+      "To compress files",
+      "To combine multiple lists into a single list",
+      "To combine multiple tuples into a single tuple",
+      "To combine multiple dictionaries into a single dictionary"
+    ],
+    "answer": "To aggregate elements from multiple iterables",
+    "explanation": "The `zip()` function takes multiple iterables and returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the input iterables."
+  },
+  {
+    "question": "What is the purpose of the `any()` function in Python?",
+    "options": [
+      "To return True if any element of an iterable is True",
+      "To return True if all elements of an iterable are True",
+      "To return True if any element of an iterable is False",
+      "To return True if all elements of an iterable are False",
+      "To return True if an iterable contains any elements"
+    ],
+    "answer": "To return True if any element of an iterable is True",
+    "explanation": "The `any()` function returns True if any element of an iterable is True. If the iterable is empty, it returns False."
+  },
+  {
+    "question": "Write a simple Python program to print an output.",
+    "options": ["print(\"Hello, World!\")", "Hello, World!", "\"Hello, World!\"", "Error", "None of the above"],
+    "answer": "print(\"Hello, World!\")",
+    "explanation": "The `print()` function displays the string \"Hello, World!\" on the console."
+  },
+  {
+    "question": "What is the output of `print(type([1, 2, 3]))`?",
+    "options": ["list", "tuple", "set", "array", "Error"],
+    "answer": "list",
+    "explanation": "The `type()` function returns the type of an object. `[1, 2, 3]` is a list."
+  },
+  {
+    "question": "What is the output of `print(2 ** 3)`?",
+    "options": ["6", "8", "9", "16", "Error"],
+    "answer": "8",
+    "explanation": "The `**` operator is used for exponentiation. 2 to the power of 3 is 8."
+  },
+  {
+    "question": "What does the `len()` function do in Python?",
+    "options": [
+      "Returns the length of a string, list, tuple, or other iterable",
+      "Returns the largest element in a list",
+      "Returns the smallest element in a list",
+      "Returns the number of lines in a file",
+      "Returns the number of characters in a string"
+    ],
+    "answer": "Returns the length of a string, list, tuple, or other iterable",
+    "explanation": "The `len()` function returns the number of items in a container (string, list, tuple, etc.)."
+  },
+  {
+    "question": "What is the output of `print(10 % 3)`?",
+    "options": ["1", "3", "0", "3.33", "Error"],
+    "answer": "1",
+    "explanation": "The `%` operator is the modulo operator, which returns the remainder of a division. 10 divided by 3 has a remainder of 1."
+  },
+  {
+    "question": "What is the purpose of the `try...except` block in Python?",
+    "options": [
+      "To handle exceptions",
+      "To define a function",
+      "To create a loop",
+      "To define a class",
+      "To import a module"
+    ],
+    "answer": "To handle exceptions",
+    "explanation": "The `try...except` block is used for exception handling. Code that might raise an exception is placed in the `try` block, and the `except` block specifies how to handle the exception if it occurs."
+  },
+  {
+    "question": "What is the output of `print(\"Hello\".replace(\"H\", \"J\"))`?",
+    "options": ["Jello", "Hello", "Jelloo", "Hxllo", "Error"],
+    "answer": "Jello",
+    "explanation": "The `replace()` method replaces occurrences of a substring with another substring."
+  },
+  {
+    "question": "What is the output of `print(\"1,2,3\".split(\",\"))`?",
+    "options": ["['1', '2', '3']", "1,2,3", "['1,2,3']", "['1', '2', '3', '']", "Error"],
+    "answer": "['1', '2', '3']",
+    "explanation": "The `split()` method splits a string into a list of substrings based on a delimiter."
+  },
+  {
+    "question": "What is the output of `print(abs(-5))`?",
+    "options": ["5", "-5", "0", "Error", "None of the above"],
+    "answer": "5",
+    "explanation": "The `abs()` function returns the absolute value of a number."
+  },
+  {
+    "question": "What is the output of `print(round(3.14159, 2))`?",
+    "options": ["3.14", "3.1", "3.141", "3", "Error"],
+    "answer": "3.14",
+    "explanation": "The `round()` function rounds a number to a specified number of decimal places."
+  },
+  {
+    "question": "What is the output of `print(\"Python\".lower())`?",
+    "options": ["python", "Python", "PYTHON", "pYTHON", "Error"],
+    "answer": "python",
+    "explanation": "The `lower()` method converts a string to lowercase."
+  },
+  {
+    "question": "What is the output of `print(\"python\".upper())`?",
+    "options": ["PYTHON", "python", "Python", "pYTHON", "Error"],
+    "answer": "PYTHON",
+    "explanation": "The `upper()` method converts a string to uppercase."
+  },
+  {
+    "question": "What is the output of `print(\"   Python   \".strip())`?",
+    "options": ["Python", "   Python   ", "Python   ", "   Python", "Error"],
+    "answer": "Python",
+    "explanation": "The `strip()` method removes leading and trailing whitespace from a string."
+  },
+  {
+    "question": "What is the output of `print(max([1, 5, 2, 8, 3]))`?",
+    "options": ["8", "1", "5", "3", "Error"],
+    "answer": "8",
+    "explanation": "The `max()` function returns the largest item in an iterable."
+  },
+  {
+    "question": "What is the output of `print(min([1, 5, 2, 8, 3]))`?",
+    "options": ["1", "8", "5", "3", "Error"],
+    "answer": "1",
+    "explanation": "The `min()` function returns the smallest item in an iterable."
+  },
+  {
+    "question": "What is the output of `print(sum([1, 2, 3, 4, 5]))`?",
+    "options": ["15", "10", "5", "0", "Error"],
+    "answer": "15",
+    "explanation": "The `sum()` function returns the sum of all items in an iterable."
+  },
+  {
+    "question": "What is the output of `print(sorted([5, 2, 8, 1, 9]))`?",
+    "options": ["[1, 2, 5, 8, 9]", "[5, 2, 8, 1, 9]", "[9, 8, 5, 2, 1]", "[1, 5, 2, 8, 9]", "Error"],
+    "answer": "[1, 2, 5, 8, 9]",
+    "explanation": "The `sorted()` function returns a new sorted list from the items in an iterable."
+  },
+  {
+    "question": "What is the output of `print(list(range(5)))`?",
+    "options": ["[0, 1, 2, 3, 4]", "[1, 2, 3, 4, 5]", "[0, 1, 2, 3, 4, 5]", "[5]", "Error"],
+    "answer": "[0, 1, 2, 3, 4]",
+    "explanation": "The `range()` function generates a sequence of numbers, and `list()` converts it to a list."
+  },
+  {
+    "question": "What is the output of `print(dir([1, 2]))`?",
+    "options": [
+      "A list of attributes and methods of the list object",
+      "The length of the list",
+      "The elements of the list",
+      "The type of the list",
+      "Error"
+    ],
+    "answer": "A list of attributes and methods of the list object",
+    "explanation": "The `dir()` function returns a list of valid attributes and methods of an object."
+  },
+  {
+    "question": "What is the output of `print(isinstance(5, int))`?",
+    "options": ["True", "False", "Error", "None of the above"],
+    "answer": "True",
+    "explanation": "The `isinstance()` function checks if an object is an instance of a class or type."
+  },
+  {
+    "question": "What is the output of `print(divmod(10, 3))`?",
+    "options": ["(3, 1)", "(3, 0)", "(1, 3)", "(10, 3)", "Error"],
+    "answer": "(3, 1)",
+    "explanation": "The `divmod()` function returns a tuple containing the quotient and remainder of a division."
+  },
+  {
+    "question": "What is the output of `print(pow(2, 3))`?",
+    "options": ["8", "6", "9", "16", "Error"],
+    "answer": "8",
+    "explanation": "The `pow()` function raises a number to a power. 2 to the power of 3 is 8."
+  },
+  {
+    "question": "What is the output of `print(chr(65))`?",
+    "options": ["A", "65", "B", "a", "Error"],
+    "answer": "A",
+    "explanation": "The `chr()` function returns the character represented by a Unicode code point."
+  },
+  {
+    "question": "What is the output of `print(ord('A'))`?",
+    "options": ["65", "A", "66", "a", "Error"],
+    "answer": "65",
+    "explanation": "The `ord()` function returns the Unicode code point for a character."
+  },
+  {
+    "question": "What is the output of `print(hex(255))`?",
+    "options": ["0xff", "255", "ff", "0x255", "Error"],
+    "answer": "0xff",
+    "explanation": "The `hex()` function converts an integer to a hexadecimal string."
+  },
+  {
+    "question": "What is the output of `print(oct(8))`?",
+    "options": ["0o10", "8", "10", "08", "Error"],
+    "answer": "0o10",
+    "explanation": "The `oct()` function converts an integer to an octal string."
+  },
+  {
+    "question": "What is the output of `print(bin(5))`?",
+    "options": ["0b101", "5", "101", "05", "Error"],
+    "answer": "0b101",
+    "explanation": "The `bin()` function converts an integer to a binary string."
+  },
+  {
+    "question": "What is the output of `print(bool(0))`?",
+    "options": ["False", "True", "Error", "None of the above"],
+    "answer": "False",
+    "explanation": "The `bool()` function converts a value to a boolean. 0 is considered False."
+  },
+  {
+    "question": "What is the output of `print(bool(1))`?",
+    "options": ["True", "False", "Error", "None of the above"],
+    "answer": "True",
+    "explanation": "The `bool()` function converts a value to a boolean. 1 is considered True."
+  },
+  {
+    "question": "What is the output of `print(bool(''))`?",
+    "options": ["False", "True", "Error", "None of the above"],
+    "answer": "False",
+    "explanation": "The `bool()` function converts a value to a boolean. An empty string is considered False."
+  },
+  {
+    "question": "What is the output of `print(bool('abc'))`?",
+    "options": ["True", "False", "Error", "None of the above"],
+    "answer": "True",
+    "explanation": "The `bool()` function converts a value to a boolean. A non-empty string is considered True."
+  },
+  {
+    "question": "What is the output of `print(type({1, 2, 3}))`?",
+    "options": ["set", "list", "tuple", "dict", "Error"],
+    "answer": "set",
+    "explanation": "The `type()` function returns the type of an object. `{1, 2, 3}` is a set."
+  },
+  {
+    "question": "What is the output of `print(type({'a': 1, 'b': 2}))`?",
+    "options": ["dict", "list", "tuple", "set", "Error"],
+    "answer": "dict",
+    "explanation": "The `type()` function returns the type of an object. `{'a': 1, 'b': 2}` is a dictionary."
+  },
+  {
+    "question": "What is the output of `print(type((1, 2, 3)))`?",
+    "options": ["tuple", "list", "set", "dict", "Error"],
+    "answer": "tuple",
+    "explanation": "The `type()` function returns the type of an object. `(1, 2, 3)` is a tuple."
+  },
+  {
+    "question": "What is the output of `print(type(None))`?",
+    "options": ["NoneType", "null", "nil", "void", "Error"],
+    "answer": "NoneType",
+    "explanation": "The `type()` function returns the type of an object. `None` is of type `NoneType`."
+  },
+  {
+    "question": "What is the output of `print(float(5))`?",
+    "options": ["5.0", "5", "5.00", "5. ", "Error"],
+    "answer": "5.0",
+    "explanation": "The `float()` function converts a value to a floating-point number."
+  },
+  {
+    "question": "What is the output of `print(int(5.9))`?",
+    "options": ["5", "6", "5.9", "5.0", "Error"],
+    "answer": "5",
+    "explanation": "The `int()` function converts a value to an integer, truncating any decimal part."
+  },
+  {
+    "question": "What is the output of `print(str(5))`?",
+    "options": ["5", "\"5\"", "'5'", "5.0", "Error"],
+    "answer": "5",
+    "explanation": "The `str()` function converts a value to a string."
+  },
+  {
+    "question": "What is the output of `print(list('hello'))`?",
+    "options": ["['h', 'e', 'l', 'l', 'o']", "hello", "['hello']", "['h', 'e', 'l', 'l', 'o', '']", "Error"],
+    "answer": "['h', 'e', 'l', 'l', 'o']",
+    "explanation": "The `list()` function converts an iterable (like a string) to a list of its elements."
+  },
+  {
+    "question": "What is the output of `print(set('hello'))`?",
+    "options": ["{'o', 'l', 'e', 'h'}", "{'h', 'e', 'l', 'l', 'o'}", "['h', 'e', 'l', 'l', 'o']", "hello", "Error"],
+    "answer": "{'o', 'l', 'e', 'h'}",
+    "explanation": "The `set()` function converts an iterable to a set, which contains only unique elements in no particular order."
+  },
+  {
+    "question": "What is the output of `print(tuple([1, 2, 3]))`?",
+    "options": ["(1, 2, 3)", "[1, 2, 3]", "{1, 2, 3}", "1, 2, 3", "Error"],
+    "answer": "(1, 2, 3)",
+    "explanation": "The `tuple()` function converts an iterable (like a list) to a tuple."
+  },
+  {
+    "question": "What is the output of `print(dict([(1, 'a'), (2, 'b')]))`?",
+    "options": ["{1: 'a', 2: 'b'}", "[(1, 'a'), (2, 'b')]", "[1, 'a', 2, 'b']", "(1, 'a', 2, 'b')", "Error"],
+    "answer": "{1: 'a', 2: 'b'}",
+    "explanation": "The `dict()` function can create a dictionary from a list of key-value pairs (tuples)."
+  },
+  {
+    "question": "What is the output of `print(globals())`?",
+    "options": [
+      "A dictionary representing the current global symbol table",
+      "A list of global variables",
+      "A tuple of global variables",
+      "A set of global variables",
+      "Error"
+    ],
+    "answer": "A dictionary representing the current global symbol table",
+    "explanation": "The `globals()` function returns a dictionary representing the current global symbol table."
+  },
+  {
+    "question": "What is the output of `print(locals())`?",
+    "options": [
+      "A dictionary representing the current local symbol table",
+      "A list of local variables",
+      "A tuple of local variables",
+      "A set of local variables",
+      "Error"
+    ],
+    "answer": "A dictionary representing the current local symbol table",
+    "explanation": "The `locals()` function returns a dictionary representing the current local symbol table."
+  },
+  {
+    "question": "What is the output of `print(id(5))`?",
+    "options": [
+      "A unique identifier for the object 5",
+      "The value of the object 5",
+      "The type of the object 5",
+      "The size of the object 5",
+      "Error"
+    ],
+    "answer": "A unique identifier for the object 5",
+    "explanation": "The `id()` function returns a unique identifier (memory address) for an object."
+  },
+  {
+    "question": "What is the output of `print(hash('hello'))`?",
+    "options": [
+      "A hash value for the string 'hello'",
+      "The length of the string 'hello'",
+      "The type of the string 'hello'",
+      "The memory address of the string 'hello'",
+      "Error"
+    ],
+    "answer": "A hash value for the string 'hello'",
+    "explanation": "The `hash()` function returns the hash value of an object (if it is hashable)."
+  },
+  {
+    "question": "What is the output of `print(memoryview(b'hello'))`?",
+    "options": [
+      "A memoryview object of the bytes 'hello'",
+      "The string 'hello'",
+      "The bytes 'hello'",
+      "The length of the bytes 'hello'",
+      "Error"
+    ],
+    "answer": "A memoryview object of the bytes 'hello'",
+    "explanation": "The `memoryview()` function returns a memoryview object, which allows access to the internal data of an object without copying."
+  },
+  {
+    "question": "What is the output of `print(complex(2, 3))`?",
+    "options": ["(2+3j)", "5", "2+3j", "2,3", "Error"],
+    "answer": "(2+3j)",
+    "explanation": "The `complex()` function creates a complex number."
+  },
+  {
+    "question": "What is the output of `print(frozenset([1, 2, 3]))`?",
+    "options": ["frozenset({1, 2, 3})", "{1, 2, 3}", "[1, 2, 3]", "(1, 2, 3)", "Error"],
+    "answer": "frozenset({1, 2, 3})",
+    "explanation": "The `frozenset()` function creates an immutable set."
+  },
+  {
+    "question": "What is the output of `print(enumerate(['a', 'b', 'c']))`?",
+    "options": ["An enumerate object", "['a', 'b', 'c']", "[(0, 'a'), (1, 'b'), (2, 'c')]", "0 a 1 b 2 c", "Error"],
+    "answer": "An enumerate object",
+    "explanation": "The `enumerate()` function returns an enumerate object, which yields pairs of (index, value) when iterated over."
+  },
+  {
+    "question": "What is the output of `print(reversed([1, 2, 3]))`?",
+    "options": ["A reversed object", "[3, 2, 1]", "[1, 2, 3]", "(3, 2, 1)", "Error"],
+    "answer": "A reversed object",
+    "explanation": "The `reversed()` function returns a reversed iterator."
+  },
+  {
+    "question": "What is the output of `print(slice(1, 5, 2))`?",
+    "options": ["slice(1, 5, 2)", "[1, 3]", "[1, 2, 3, 4]", "(1, 5, 2)", "Error"],
+    "answer": "slice(1, 5, 2)",
+    "explanation": "The `slice()` function creates a slice object, representing a set of indices specified by range(start, stop, step)."
+  }
+]
+

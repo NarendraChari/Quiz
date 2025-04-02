@@ -1,0 +1,33 @@
+[
+  {
+    "question": "Which of the following is NOT a feature of Java?",
+    "options": [
+      "Platform independent",
+      "Object-oriented",
+      "Pointer arithmetic",
+      "Automatic garbage collection",
+      "Multithreading"
+    ],
+    "answer": "Pointer arithmetic",
+    "explanation": "Java does not support pointer arithmetic, which is a feature of C and C++."
+  },
+  {
+    "question": "What is the role of the Java Virtual Machine (JVM)?",
+    "options": [
+      "To compile Java code",
+      "To execute Java bytecode",
+      "To manage memory allocation",
+      "All of the above",
+      "None of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "The JVM is responsible for compiling, executing, and managing memory for Java programs."
+  },
+  {
+    "question": "Which keyword is used to inherit a class in Java?",
+    "options": ["`inherits`", "`extends`", "`implements`", "`inherit`", "`derive`"],
+    "answer": "`extends`",
+    "explanation": "The `extends` keyword is used to inherit a class in Java."
+  }
+]
+

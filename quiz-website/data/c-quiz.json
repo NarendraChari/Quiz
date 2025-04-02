@@ -1,0 +1,657 @@
+[
+  {
+    "question": "Why is C called a mid-level programming language?",
+    "options": [
+      "It only supports high-level features.",
+      "It only supports low-level features.",
+      "It supports both low-level and high-level features.",
+      "It is an outdated language.",
+      "It is used for web development."
+    ],
+    "answer": "It supports both low-level and high-level features.",
+    "explanation": "C supports both low-level features like pointer arithmetic and high-level features like machine independence."
+  },
+  {
+    "question": "Which of the following is NOT a token in C?",
+    "options": ["Keywords", "Identifiers", "Constants", "Data Types", "Operators"],
+    "answer": "Data Types",
+    "explanation": "Data types are not tokens; tokens are the smallest individual units in a program, including keywords, identifiers, constants, strings, special symbols, and operators."
+  },
+  {
+    "question": "What is the scope of a local variable?",
+    "options": [
+      "Throughout the entire program",
+      "Only within the function or block where it is declared",
+      "Only in the main function",
+      "Accessible by all functions",
+      "Only within the file"
+    ],
+    "answer": "Only within the function or block where it is declared",
+    "explanation": "Local variables are declared inside a function or block and are only accessible within that scope."
+  },
+  {
+    "question": "What is the purpose of static variables in C?",
+    "options": [
+      "To make variables global",
+      "To preserve data values between function calls",
+      "To make variables constant",
+      "To increase program execution speed",
+      "To reduce memory usage"
+    ],
+    "answer": "To preserve data values between function calls",
+    "explanation": "Static variables retain their values between function calls, even after they are out of scope."
+  },
+  {
+    "question": "What is the difference between `malloc()` and `calloc()`?",
+    "options": [
+      "`malloc()` initializes memory to zero, while `calloc()` does not.",
+      "`calloc()` allocates a single block of memory, while `malloc()` allocates multiple blocks.",
+      "`malloc()` takes one argument, while `calloc()` takes two arguments.",
+      "`calloc()` is faster than `malloc()`.",
+      "There is no difference between them."
+    ],
+    "answer": "`malloc()` takes one argument, while `calloc()` takes two arguments.",
+    "explanation": "`malloc()` takes one argument (size), while `calloc()` takes two arguments (number of elements and size of each element)."
+  },
+  {
+    "question": "What is the purpose of the `sizeof` operator in C?",
+    "options": [
+      "To determine the size of a variable or data type in bytes",
+      "To allocate memory for a variable",
+      "To compare the sizes of two variables",
+      "To determine the length of an array",
+      "To determine the size of a function"
+    ],
+    "answer": "To determine the size of a variable or data type in bytes",
+    "explanation": "The `sizeof` operator returns the size of a variable or data type in bytes, which is useful for memory allocation and manipulation."
+  },
+  {
+    "question": "What is a pointer in C?",
+    "options": [
+      "A variable that stores a memory address",
+      "A variable that can point to multiple values",
+      "A variable that cannot be changed",
+      "A variable that can only store integers",
+      "A variable that can only be used in functions"
+    ],
+    "answer": "A variable that stores a memory address",
+    "explanation": "A pointer is a variable that stores the memory address of another variable, allowing indirect access to that variable's value."
+  },
+  {
+    "question": "What is the purpose of the `const` keyword in C?",
+    "options": [
+      "To declare a constant variable that cannot be modified",
+      "To declare a constant function that cannot be modified",
+      "To declare a constant pointer that cannot be modified",
+      "To declare a constant array that cannot be modified",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "The `const` keyword can be used to declare constants of various types, including variables, pointers, arrays, and function parameters."
+  },
+  {
+    "question": "What is the difference between `++i` and `i++` in C?",
+    "options": [
+      "There is no difference",
+      "`++i` increments i before using it, while `i++` uses i before incrementing it",
+      "`i++` increments i before using it, while `++i` uses i before incrementing it",
+      "`++i` can only be used in loops, while `i++` can be used anywhere",
+      "`i++` can only be used in loops, while `++i` can be used anywhere"
+    ],
+    "answer": "`++i` increments i before using it, while `i++` uses i before incrementing it",
+    "explanation": "`++i` (pre-increment) increments the value of i before it is used in an expression, while `i++` (post-increment) uses the current value of i in the expression and then increments it."
+  },
+  {
+    "question": "What is a structure in C?",
+    "options": [
+      "A collection of variables of different data types under a single name",
+      "A collection of variables of the same data type under a single name",
+      "A collection of functions under a single name",
+      "A collection of pointers under a single name",
+      "A collection of arrays under a single name"
+    ],
+    "answer": "A collection of variables of different data types under a single name",
+    "explanation": "A structure is a user-defined data type that allows you to combine data items of different kinds under a single name, making it easier to organize and manipulate related data."
+  },
+  {
+    "question": "What is the purpose of the `#include` directive in C?",
+    "options": [
+      "To include the contents of a header file in the program",
+      "To include the contents of a source file in the program",
+      "To include the contents of a library in the program",
+      "To include the contents of a function in the program",
+      "To include the contents of a variable in the program"
+    ],
+    "answer": "To include the contents of a header file in the program",
+    "explanation": "The `#include` directive is used to include the contents of a header file in a C program, which typically contains function declarations, macro definitions, and type definitions."
+  },
+  {
+    "question": "What is the purpose of the `break` statement in C?",
+    "options": [
+      "To exit from a loop or switch statement",
+      "To skip the current iteration of a loop",
+      "To terminate the program",
+      "To return from a function",
+      "To pause the execution of a program"
+    ],
+    "answer": "To exit from a loop or switch statement",
+    "explanation": "The `break` statement is used to exit from a loop (for, while, do-while) or a switch statement, transferring control to the statement immediately following the loop or switch."
+  },
+  {
+    "question": "What is the purpose of the `continue` statement in C?",
+    "options": [
+      "To skip the current iteration of a loop and continue with the next iteration",
+      "To exit from a loop or switch statement",
+      "To terminate the program",
+      "To return from a function",
+      "To pause the execution of a program"
+    ],
+    "answer": "To skip the current iteration of a loop and continue with the next iteration",
+    "explanation": "The `continue` statement is used to skip the remaining statements in the current iteration of a loop and proceed with the next iteration."
+  },
+  {
+    "question": "What is a union in C?",
+    "options": [
+      "A data type that allows storing different data types in the same memory location",
+      "A data type that allows storing different data types in different memory locations",
+      "A data type that allows storing the same data type in different memory locations",
+      "A data type that allows storing the same data type in the same memory location",
+      "A data type that allows storing different data types in sequential memory locations"
+    ],
+    "answer": "A data type that allows storing different data types in the same memory location",
+    "explanation": "A union is a user-defined data type that allows different data types to share the same memory location, but only one member can contain a value at any given time."
+  },
+  {
+    "question": "What is the purpose of the `typedef` keyword in C?",
+    "options": [
+      "To create a new name for an existing data type",
+      "To define a new data type",
+      "To declare a variable",
+      "To define a function",
+      "To include a header file"
+    ],
+    "answer": "To create a new name for an existing data type",
+    "explanation": "The `typedef` keyword is used to create a new name (alias) for an existing data type, making complex type declarations more readable and maintainable."
+  },
+  {
+    "question": "What is a macro in C?",
+    "options": [
+      "A piece of code that is replaced by the value of the macro",
+      "A function that is executed at compile time",
+      "A variable that is initialized at compile time",
+      "A constant that cannot be changed",
+      "A function that is executed at runtime"
+    ],
+    "answer": "A piece of code that is replaced by the value of the macro",
+    "explanation": "A macro is a fragment of code that is given a name. Whenever the name is used, it is replaced by the contents of the macro before the program is compiled."
+  },
+  {
+    "question": "What is the purpose of the `enum` keyword in C?",
+    "options": [
+      "To define a set of named integer constants",
+      "To define a set of named floating-point constants",
+      "To define a set of named character constants",
+      "To define a set of named string constants",
+      "To define a set of named boolean constants"
+    ],
+    "answer": "To define a set of named integer constants",
+    "explanation": "The `enum` keyword is used to define an enumeration, which is a set of named integer constants that make the code more readable and maintainable."
+  },
+  {
+    "question": "What is the purpose of the `void` keyword in C?",
+    "options": [
+      "To specify that a function does not return a value",
+      "To specify that a function does not take any parameters",
+      "To specify that a pointer does not point to any specific data type",
+      "All of the above",
+      "None of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "The `void` keyword can be used to specify that a function does not return a value, does not take any parameters, or that a pointer does not point to any specific data type."
+  },
+  {
+    "question": "What is the purpose of the `volatile` keyword in C?",
+    "options": [
+      "To indicate that a variable's value can be changed by external factors",
+      "To indicate that a variable's value cannot be changed",
+      "To indicate that a variable's value can only be changed by the program",
+      "To indicate that a variable's value is stored in volatile memory",
+      "To indicate that a variable's value is temporary"
+    ],
+    "answer": "To indicate that a variable's value can be changed by external factors",
+    "explanation": "The `volatile` keyword is used to indicate that a variable's value can be changed by factors outside the control of the program, such as hardware or another thread, preventing the compiler from optimizing access to the variable."
+  },
+  {
+    "question": "What is the purpose of the `register` keyword in C?",
+    "options": [
+      "To suggest that a variable be stored in a CPU register for faster access",
+      "To indicate that a variable is registered with the operating system",
+      "To indicate that a variable is stored in a specific memory register",
+      "To indicate that a variable is used frequently in the program",
+      "To indicate that a variable is used as a counter in a loop"
+    ],
+    "answer": "To suggest that a variable be stored in a CPU register for faster access",
+    "explanation": "The `register` keyword is used as a hint to the compiler that the variable will be heavily used and should be stored in a CPU register for faster access, although modern compilers often ignore this suggestion."
+  },
+  {
+    "question": "What is the difference between source code and object code?",
+    "options": [
+      "Source code is human-readable, object code is machine-readable",
+      "Source code is platform-specific, object code is platform-independent",
+      "Source code is compiled, object code is interpreted",
+      "Source code is larger in size, object code is smaller in size",
+      "There is no difference"
+    ],
+    "answer": "Source code is human-readable, object code is machine-readable",
+    "explanation": "Source code is written by programmers and is human-readable, while object code is the machine-readable output of a compiler."
+  },
+  {
+    "question": "What is the role of a compiler in C programming?",
+    "options": [
+      "To translate source code into machine code",
+      "To execute the source code directly",
+      "To debug the source code",
+      "To write the source code",
+      "To manage memory allocation"
+    ],
+    "answer": "To translate source code into machine code",
+    "explanation": "A compiler translates human-readable source code into machine code (object code) that the computer can execute."
+  },
+  {
+    "question": "Which header file is required for using the `printf()` function in C?",
+    "options": ["stdio.h", "conio.h", "stdlib.h", "math.h", "string.h"],
+    "answer": "stdio.h",
+    "explanation": "The `printf()` function, used for formatted output, is declared in the `stdio.h` header file."
+  },
+  {
+    "question": "What is the purpose of the `scanf()` function in C?",
+    "options": [
+      "To read formatted input from the user",
+      "To print formatted output to the console",
+      "To allocate memory dynamically",
+      "To deallocate memory dynamically",
+      "To perform mathematical calculations"
+    ],
+    "answer": "To read formatted input from the user",
+    "explanation": "The `scanf()` function is used to read formatted input from the standard input (usually the keyboard) and store it in variables."
+  },
+  {
+    "question": "What is the correct way to declare a character array (string) in C?",
+    "options": ["char str[];", "string str;", "char *str;", "char str[10];", "All of the above"],
+    "answer": "char str[10];",
+    "explanation": "A character array (string) in C is declared as `char str[size];`, where `size` is the maximum number of characters the string can hold, including the null terminator."
+  },
+  {
+    "question": "What is the null character in C?",
+    "options": ["'\\0'", "'0'", "NULL", "EOF", "None of the above"],
+    "answer": "'\\0'",
+    "explanation": "The null character, represented as `'\\0'`, is used to terminate strings in C. It has a numeric value of 0."
+  },
+  {
+    "question": "What is the difference between a structure and a union in C?",
+    "options": [
+      "Structures store multiple values, unions store only one value at a time",
+      "Unions store multiple values, structures store only one value at a time",
+      "Structures and unions are the same",
+      "Structures are used for integers, unions are used for floating-point numbers",
+      "Structures are used for input, unions are used for output"
+    ],
+    "answer": "Structures store multiple values, unions store only one value at a time",
+    "explanation": "A structure can store multiple members of different data types, while a union can only store one member at a time, sharing the same memory location."
+  },
+  {
+    "question": "What is the purpose of function prototypes in C?",
+    "options": [
+      "To declare a function before it is defined",
+      "To define a function",
+      "To call a function",
+      "To include a header file",
+      "To declare a variable"
+    ],
+    "answer": "To declare a function before it is defined",
+    "explanation": "Function prototypes declare the function's name, return type, and parameters before the function is actually defined, allowing the compiler to check for correct usage."
+  },
+  {
+    "question": "What is recursion in C?",
+    "options": [
+      "A function calling itself",
+      "A loop that never ends",
+      "A variable that stores its own address",
+      "A pointer pointing to itself",
+      "A function that returns void"
+    ],
+    "answer": "A function calling itself",
+    "explanation": "Recursion is a programming technique where a function calls itself to solve a smaller instance of the same problem."
+  },
+  {
+    "question": "What is the purpose of the `return` statement in C?",
+    "options": [
+      "To return a value from a function",
+      "To exit the program",
+      "To skip the current iteration of a loop",
+      "To declare a variable",
+      "To include a header file"
+    ],
+    "answer": "To return a value from a function",
+    "explanation": "The `return` statement is used to return a value from a function to the calling function. If the function's return type is `void`, it can be used to exit the function."
+  },
+  {
+    "question": "What is the difference between pass by value and pass by reference?",
+    "options": [
+      "Pass by value copies the value, pass by reference passes the memory address",
+      "Pass by reference copies the value, pass by value passes the memory address",
+      "There is no difference",
+      "Pass by value is faster, pass by reference is slower",
+      "Pass by reference is faster, pass by value is slower"
+    ],
+    "answer": "Pass by value copies the value, pass by reference passes the memory address",
+    "explanation": "In pass by value, a copy of the argument's value is passed to the function. In pass by reference, the memory address of the argument is passed, allowing the function to modify the original value."
+  },
+  {
+    "question": "What is dynamic memory allocation in C?",
+    "options": [
+      "Allocating memory during program execution",
+      "Allocating memory at compile time",
+      "Allocating memory automatically by the operating system",
+      "Allocating memory for static variables",
+      "Allocating memory for global variables"
+    ],
+    "answer": "Allocating memory during program execution",
+    "explanation": "Dynamic memory allocation is the process of allocating memory during the runtime of a program, using functions like `malloc()` and `calloc()`."
+  },
+  {
+    "question": "Which function is used to free dynamically allocated memory in C?",
+    "options": ["free()", "malloc()", "calloc()", "realloc()", "delete()"],
+    "answer": "free()",
+    "explanation": "The `free()` function is used to deallocate dynamically allocated memory, returning it to the system for reuse."
+  },
+  {
+    "question": "What is a memory leak in C?",
+    "options": [
+      "Failure to free dynamically allocated memory",
+      "Accessing memory that has already been freed",
+      "Writing beyond the bounds of an array",
+      "Reading from an uninitialized variable",
+      "All of the above"
+    ],
+    "answer": "Failure to free dynamically allocated memory",
+    "explanation": "A memory leak occurs when dynamically allocated memory is no longer accessible to the program but has not been freed, leading to a gradual depletion of available memory."
+  },
+  {
+    "question": "What is the purpose of the `realloc()` function in C?",
+    "options": [
+      "To resize a dynamically allocated memory block",
+      "To allocate a new memory block",
+      "To free a memory block",
+      "To initialize a memory block",
+      "To copy a memory block"
+    ],
+    "answer": "To resize a dynamically allocated memory block",
+    "explanation": "The `realloc()` function is used to change the size of a previously allocated memory block. It can either expand or shrink the block."
+  },
+  {
+    "question": "What is type casting in C?",
+    "options": [
+      "Converting a variable from one data type to another",
+      "Declaring a new data type",
+      "Defining a function",
+      "Including a header file",
+      "Allocating memory"
+    ],
+    "answer": "Converting a variable from one data type to another",
+    "explanation": "Type casting is the process of converting a variable from one data type to another, such as from an integer to a floating-point number."
+  },
+  {
+    "question": "What is the difference between `static` and `extern` storage classes in C?",
+    "options": [
+      "`static` limits scope to the file, `extern` extends scope to other files",
+      "`extern` limits scope to the file, `static` extends scope to other files",
+      "They are the same",
+      "`static` is used for variables, `extern` is used for functions",
+      "`extern` is used for variables, `static` is used for functions"
+    ],
+    "answer": "`static` limits scope to the file, `extern` extends scope to other files",
+    "explanation": "The `static` storage class limits the scope of a variable or function to the file in which it is defined, while `extern` is used to declare a variable or function that is defined in another file."
+  },
+  {
+    "question": "What is the purpose of the `goto` statement in C?",
+    "options": [
+      "To transfer control to a labeled statement",
+      "To exit a loop",
+      "To skip an iteration of a loop",
+      "To return from a function",
+      "To terminate the program"
+    ],
+    "answer": "To transfer control to a labeled statement",
+    "explanation": "The `goto` statement is used to transfer control to a labeled statement within the same function. Its use is generally discouraged due to potential for creating spaghetti code."
+  },
+  {
+    "question": "What are command-line arguments in C?",
+    "options": [
+      "Arguments passed to the program when it is executed",
+      "Arguments passed to a function",
+      "Variables declared in the main function",
+      "Header files included in the program",
+      "Comments in the program"
+    ],
+    "answer": "Arguments passed to the program when it is executed",
+    "explanation": "Command-line arguments are values passed to a C program when it is executed from the command line. They are accessed through the `argc` and `argv` parameters of the `main()` function."
+  },
+  {
+    "question": "What is the purpose of the `assert()` macro in C?",
+    "options": [
+      "To check for a condition and terminate the program if it is false",
+      "To allocate memory",
+      "To deallocate memory",
+      "To print output to the console",
+      "To read input from the user"
+    ],
+    "answer": "To check for a condition and terminate the program if it is false",
+    "explanation": "The `assert()` macro is used to check for a condition during debugging. If the condition is false, the program terminates with an error message."
+  },
+  {
+    "question": "What is the difference between `#define` and `const` in C?",
+    "options": [
+      "`#define` is a preprocessor directive, `const` declares a constant variable",
+      "`const` is a preprocessor directive, `#define` declares a constant variable",
+      "They are the same",
+      "`#define` is used for integers, `const` is used for floating-point numbers",
+      "`const` is used for integers, `#define` is used for floating-point numbers"
+    ],
+    "answer": "`#define` is a preprocessor directive, `const` declares a constant variable",
+    "explanation": "`#define` is a preprocessor directive that performs text substitution before compilation, while `const` declares a constant variable whose value cannot be changed after initialization."
+  },
+  {
+    "question": "What is the purpose of bitwise operators in C?",
+    "options": [
+      "To perform operations on individual bits of data",
+      "To perform arithmetic operations",
+      "To perform logical operations",
+      "To compare two values",
+      "To allocate memory"
+    ],
+    "answer": "To perform operations on individual bits of data",
+    "explanation": "Bitwise operators in C (e.g., `&`, `|`, `^`, `~`, `<<`, `>>`) are used to perform operations on individual bits of data, such as setting, clearing, or shifting bits."
+  },
+  {
+    "question": "What is the purpose of the `signal()` function in C?",
+    "options": [
+      "To handle asynchronous events or interrupts",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To handle asynchronous events or interrupts",
+    "explanation": "The `signal()` function is used to specify how a program should handle asynchronous events or interrupts, such as keyboard interrupts or errors."
+  },
+  {
+    "question": "What is the purpose of the `atexit()` function in C?",
+    "options": [
+      "To register a function to be called when the program terminates",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To register a function to be called when the program terminates",
+    "explanation": "The `atexit()` function is used to register a function that will be called automatically when the program terminates normally."
+  },
+  {
+    "question": "What is the purpose of the `setjmp()` and `longjmp()` functions in C?",
+    "options": [
+      "To implement non-local jumps (jumping to a different function)",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To implement non-local jumps (jumping to a different function)",
+    "explanation": "The `setjmp()` and `longjmp()` functions are used to implement non-local jumps, allowing a program to jump from one function to another, bypassing the normal function call and return mechanism."
+  },
+  {
+    "question": "What is the purpose of the `va_list`, `va_start`, `va_arg`, and `va_end` macros in C?",
+    "options": [
+      "To handle variable-length argument lists in functions",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To handle variable-length argument lists in functions",
+    "explanation": "The `va_list`, `va_start`, `va_arg`, and `va_end` macros are used to handle functions that accept a variable number of arguments, such as `printf()`."
+  },
+  {
+    "question": "What is the purpose of the `fflush()` function in C?",
+    "options": [
+      "To flush the output buffer",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To read input from the user"
+    ],
+    "answer": "To flush the output buffer",
+    "explanation": "The `fflush()` function is used to force the output buffer to be written to the output device, ensuring that data is written immediately rather than being buffered."
+  },
+  {
+    "question": "What is the purpose of the `feof()` function in C?",
+    "options": [
+      "To check for the end-of-file indicator",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To check for the end-of-file indicator",
+    "explanation": "The `feof()` function is used to check if the end-of-file indicator is set for a given file stream, indicating that the end of the file has been reached."
+  },
+  {
+    "question": "What is the purpose of the `ferror()` function in C?",
+    "options": [
+      "To check for errors on a file stream",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To check for errors on a file stream",
+    "explanation": "The `ferror()` function is used to check if an error has occurred on a given file stream."
+  },
+  {
+    "question": "What is the purpose of the `perror()` function in C?",
+    "options": [
+      "To print an error message to the standard error stream",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To print an error message to the standard error stream",
+    "explanation": "The `perror()` function is used to print an error message to the standard error stream (stderr), based on the current value of the `errno` variable."
+  },
+  {
+    "question": "What is the purpose of the `strncpy()` function in C?",
+    "options": [
+      "To copy a specified number of characters from one string to another",
+      "To concatenate two strings",
+      "To compare two strings",
+      "To find the length of a string",
+      "To allocate memory for a string"
+    ],
+    "answer": "To copy a specified number of characters from one string to another",
+    "explanation": "The `strncpy()` function is used to copy a specified number of characters from one string to another. It's safer than `strcpy()` as it prevents buffer overflows if the source string is longer than the destination buffer."
+  },
+  {
+    "question": "What is the purpose of the `strtok()` function in C?",
+    "options": [
+      "To tokenize a string (split it into smaller parts)",
+      "To copy a string",
+      "To concatenate two strings",
+      "To compare two strings",
+      "To find the length of a string"
+    ],
+    "answer": "To tokenize a string (split it into smaller parts)",
+    "explanation": "The `strtok()` function is used to tokenize a string, breaking it into smaller parts (tokens) based on a specified delimiter."
+  },
+  {
+    "question": "What is the purpose of the `sprintf()` function in C?",
+    "options": [
+      "To write formatted output to a string",
+      "To print formatted output to the console",
+      "To read formatted input from the user",
+      "To allocate memory",
+      "To deallocate memory"
+    ],
+    "answer": "To write formatted output to a string",
+    "explanation": "The `sprintf()` function is used to write formatted output to a string, similar to `printf()` but writing to a string buffer instead of the console."
+  },
+  {
+    "question": "What is the purpose of the `atoi()` function in C?",
+    "options": [
+      "To convert a string to an integer",
+      "To convert an integer to a string",
+      "To convert a string to a floating-point number",
+      "To convert a floating-point number to a string",
+      "To allocate memory"
+    ],
+    "answer": "To convert a string to an integer",
+    "explanation": "The `atoi()` function is used to convert a string representation of an integer to an integer value."
+  },
+  {
+    "question": "What is the purpose of the `rand()` function in C?",
+    "options": [
+      "To generate a pseudo-random number",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To generate a pseudo-random number",
+    "explanation": "The `rand()` function is used to generate a pseudo-random number. It typically returns an integer between 0 and `RAND_MAX`."
+  },
+  {
+    "question": "What is the purpose of the `srand()` function in C?",
+    "options": [
+      "To seed the random number generator",
+      "To allocate memory",
+      "To deallocate memory",
+      "To perform mathematical calculations",
+      "To print output to the console"
+    ],
+    "answer": "To seed the random number generator",
+    "explanation": "The `srand()` function is used to seed the random number generator, providing a starting point for the sequence of pseudo-random numbers generated by `rand()`."
+  },
+  {
+    "question": "What is the purpose of the `exit()` function in C?",
+    "options": [
+      "To terminate the program",
+      "To return from a function",
+      "To skip an iteration of a loop",
+      "To allocate memory",
+      "To deallocate memory"
+    ],
+    "answer": "To terminate the program",
+    "explanation": "The `exit()` function is used to terminate the program. It takes an integer argument, which is returned to the operating system as the program's exit status."
+  }
+]
+
